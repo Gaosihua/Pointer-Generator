@@ -125,7 +125,7 @@ if __name__ == "__main__":
                 
             with open("test.txt", "a+", encoding="utf-8") as a: a.write("".join(result)+"\n")
 
-            print('Test Accuracy of the model on the 10000 test images: {} %'.format(100 * correct / total)) 
+            print('Test Accuracy of the model on the test: {} %'.format(100 * correct / total)) 
 
 # Save the model checkpoint
 # torch.save(model.state_dict(), 'model.ckpt')`

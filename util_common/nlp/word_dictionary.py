@@ -18,7 +18,7 @@ class word_dictionary_cell():
             self.index += 1
     
     def insert_go_eos(self):
-        words = ["<go>","<eos>","<unknown>","<pad>"]
+        words = ["<go>","<eos>","<UNK>","<pad>"]
         for word in words:
             self.insert(word)
 
@@ -60,7 +60,7 @@ def word2index(words, word_index):
         if word in word_index:
             result.append(word_index[word])
         else: 
-            result.append(word_index["<null>"])
+            result.append(word_index["<UNK>"])
     return result
 
 

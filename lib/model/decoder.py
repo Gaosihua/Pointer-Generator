@@ -63,7 +63,7 @@ class AttentionDecoder(torch.nn.Module):
 
         self.fc = torch.nn.Linear(configure["hidden_size"], configure["num_words"])
 
-        self.p = torch.nn.Linear(configure["batch_size"]*2+configure["embedding_dim"], 1)
+        self.p = torch.nn.Linear(configure["max_output"]+configure["embedding_dim"], 1)
         self.sigmoid = torch.nn.Sigmoid()
 
 
@@ -88,7 +88,7 @@ class AttentionDecoder(torch.nn.Module):
         attn_value = attn_value.scatter_(1, index, attn)
 
         out = self.fc(output.view(output.size(0),-1))
-
+        # print(torch.cat([embedding.squeeze(), combine.squeeze()], 1).size(), )
         p = self.sigmoid(self.p(torch.cat([embedding.squeeze(), combine.squeeze()], 1)))
         # print(p)
         out = (1-p)*out + p*attn_value

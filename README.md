@@ -16,6 +16,16 @@ python 3.5+ (anaconda)
 pytorch
 ```
 
+## Train
+
+```
+python main.py
+
+e.g.
+Epoch [2/10000], Step [0/1], Loss: 548.0956, Coverage Loss: 2.000000
+Test Accuracy of the model on the test: 1.0 %
+```
+
 ## Examples
 
 ```
