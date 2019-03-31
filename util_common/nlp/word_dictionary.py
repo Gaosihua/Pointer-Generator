@@ -1,7 +1,7 @@
 
 
-from util_docomo_beijing.nlp.os import read_folder_content
-from util_docomo_beijing.nlp.word_token import word_token
+from util_common.nlp.os import read_folder_content
+from util_common.nlp.word_token import word_token
 
 class word_dictionary_cell():
 
