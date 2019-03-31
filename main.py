@@ -14,7 +14,7 @@ if __name__ == "__main__":
     # 1. Declare the hyperparameter
     device, configure, word_index, index_word, train_loader, test_loader = processing("./configure")
 
-    # print(len(word_index))
+    print(len(word_index))
     # Declare the encoder model
     model_encoder = SimpleEncoder(configure).to(device)
     model_decoder = AttentionDecoder(configure, device).to(device)

@@ -12,7 +12,7 @@ def read_configure_word_index(path):
     configure = eval(read_content(path))
 
     # Get the word vs index
-    word_index, index_word = word_dictionary(sentences=nlp_chinese_inter_content(), 
+    word_index, index_word = word_dictionary(sentences=nlp_chinese_inter_content(configure["folder"]), 
                                              language=configure["language"])
     return configure, word_index, index_word
 
