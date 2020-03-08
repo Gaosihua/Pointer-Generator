@@ -10,6 +10,11 @@ Using pytorch implementation of *[Get To The Point: Summarization with Pointer-G
 2. Coverage
 ```
 
+## Disabled
+```
+1. UNK
+```
+
 ## Required
 ```
 python 3.5+ (anaconda)
