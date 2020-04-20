@@ -2,7 +2,7 @@
 
 ## Point to Generator
 
-Using pytorch implementation of *[Get To The Point: Summarization with Pointer-Generator Networks](https://arxiv.org/abs/1704.04368)*
+Only for tutorial. Using pytorch implementation of *[Get To The Point: Summarization with Pointer-Generator Networks](https://arxiv.org/abs/1704.04368)*
 
 ## Enabled
 ```
